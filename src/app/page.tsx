@@ -16,8 +16,8 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
-      <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
+    <main className="container relative mx-auto scroll-my-12 overflow-auto bg-gray-800 p-4 text-white print:p-12 md:p-16">
+      <section className="mx-auto w-full max-w-2xl space-y-8 bg-gray-800 print:space-y-6">
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-1.5">
             <h1 className="text-2xl font-bold">{RESUME_DATA.name}</h1>
@@ -37,8 +37,8 @@ export default function Page() {
             <div className="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden">
               {RESUME_DATA.contact.email ? (
                 <Button
-                  className="h-8 w-8"
-                  variant="outline"
+                  className="h-8 w-8 bg-inherit"
+                  variant="ghost"
                   size="icon"
                   asChild
                 >
@@ -49,8 +49,8 @@ export default function Page() {
               ) : null}
               {RESUME_DATA.contact.tel ? (
                 <Button
-                  className="h-8 w-8"
-                  variant="outline"
+                  className="h-8 w-8 bg-inherit"
+                  variant="ghost"
                   size="icon"
                   asChild
                 >
@@ -62,8 +62,8 @@ export default function Page() {
               {RESUME_DATA.contact.social.map((social) => (
                 <Button
                   key={social.name}
-                  className="h-8 w-8"
-                  variant="outline"
+                  className="h-8 w-8 bg-inherit"
+                  variant="ghost"
                   size="icon"
                   asChild
                 >
@@ -102,10 +102,10 @@ export default function Page() {
           <h2 className="text-xl font-bold">Work Experience</h2>
           {RESUME_DATA.work.map((work) => {
             return (
-              <Card key={work.company}>
+              <Card key={work.company} className="bg-inherit">
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
-                    <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
+                    <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none text-slate-500">
                       <a className="hover:underline" href={work.link}>
                         {work.company}
                       </a>
@@ -114,7 +114,7 @@ export default function Page() {
                         {work.badges.map((badge) => (
                           <Badge
                             variant="secondary"
-                            className="align-middle text-xs"
+                            className="bg-inherit align-middle text-xs text-white"
                             key={badge}
                           >
                             {badge}
@@ -127,7 +127,7 @@ export default function Page() {
                     </div>
                   </div>
 
-                  <h4 className="font-mono text-sm leading-none">
+                  <h4 className="font-mono text-sm leading-none text-slate-300">
                     {work.title}
                   </h4>
                 </CardHeader>
@@ -142,18 +142,20 @@ export default function Page() {
           <h2 className="text-xl font-bold">Education</h2>
           {RESUME_DATA.education.map((education) => {
             return (
-              <Card key={education.school}>
+              <Card key={education.school} className="bg-inherit">
                 <CardHeader>
-                  <div className="flex items-center justify-between gap-x-2 text-base">
+                  <div className="flex items-center justify-between gap-x-2 text-base text-slate-500">
                     <h3 className="font-semibold leading-none">
                       {education.school}
                     </h3>
-                    <div className="text-sm tabular-nums text-gray-500">
+                    <div className="text-sm tabular-nums text-slate-500">
                       {education.start} - {education.end}
                     </div>
                   </div>
                 </CardHeader>
-                <CardContent className="mt-2">{education.degree}</CardContent>
+                <CardContent className="mt-2 text-slate-300">
+                  {education.degree}
+                </CardContent>
               </Card>
             );
           })}
@@ -162,7 +164,15 @@ export default function Page() {
           <h2 className="text-xl font-bold">Skills</h2>
           <div className="flex flex-wrap gap-1">
             {RESUME_DATA.skills.map((skill) => {
-              return <Badge key={skill}>{skill}</Badge>;
+              return (
+                <Badge
+                  className="bg-gray-700 text-white"
+                  variant="secondary"
+                  key={skill}
+                >
+                  {skill}
+                </Badge>
+              );
             })}
           </div>
         </Section>
