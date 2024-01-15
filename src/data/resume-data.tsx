@@ -32,7 +32,7 @@ export const RESUME_DATA = {
   personalWebsiteUrl: "https://rohitprakash.dev",
   contact: {
     email: "rohitp934@gmail.com",
-    // tel: "+48530213401",
+    tel: undefined,
     social: [
       {
         name: "GitHub",
