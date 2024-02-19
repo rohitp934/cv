@@ -1,23 +1,8 @@
-import {
-  AmbitLogo,
-  BarepapersLogo,
-  BimLogo,
-  CDGOLogo,
-  ClevertechLogo,
-  ConsultlyLogo,
-  EvercastLogo,
-  Howdy,
-  JarockiMeLogo,
-  JojoMobileLogo,
-  Minimal,
-  MobileVikingsLogo,
-  MonitoLogo,
-  NSNLogo,
-  ParabolLogo,
-  TastyCloudLogo,
-  YearProgressLogo,
-} from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import {
+  BarepapersLogo, ClevertechLogo,
+  ConsultlyLogo, JarockiMeLogo, Minimal, MonitoLogo, ParabolLogo, YearProgressLogo
+} from "@/images/logos";
 
 export const RESUME_DATA = {
   name: "Rohit Prakash",
@@ -27,7 +12,7 @@ export const RESUME_DATA = {
   about:
     "Full Stack Engineer focused on building products with extra attention to detail",
   summary:
-    "Full time student at NYU, full stack engineer. I love building products that are simple, intuitive and delightful to use. I have experience working with startups and open source. I am currently looking for full time opportunities starting May 2025.",
+    "Full time student at NYU, full stack engineer. I love building products that are simple, intuitive and delightful to use. I have experience working with startups and open source. I am currently looking for internship opportunities starting May 2024.",
   avatarUrl: "https://avatars.githubusercontent.com/u/54208873?v=4",
   personalWebsiteUrl: "https://rohitprakash.dev",
   contact: {
@@ -140,7 +125,7 @@ export const RESUME_DATA = {
       logo: JarockiMeLogo,
       link: {
         label: "github.com",
-        href: "https://rohitprakash.dev",
+        href: "https://github.com/rohitp934/v2",
       },
     },
     {
@@ -158,7 +143,7 @@ export const RESUME_DATA = {
       title: "Coding.rs",
       techStack: ["Side Project", "Rust", "Actix-Web"],
       description:
-        "An coding judge written in Rust with support for multiple languages",
+        "A coding judge written in Rust with support for multiple languages",
       logo: BarepapersLogo,
       link: {
         label: "github.com",
