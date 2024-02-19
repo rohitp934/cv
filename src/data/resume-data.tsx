@@ -71,7 +71,7 @@ export const RESUME_DATA = {
       start: "2020",
       end: "2021",
       description:
-        "Created Android mobile apps and led teams for companies like Vision Media, DKMS, or AAA. Built live streaming application for Evercast from scratch. Technologies: Android, Kotlin, React, TypeScript, GraphQL",
+        "Worked on building AI models to identify plagiarism during online interviews. Shipped OCR and Object detection models using Tesseract, Python, and Tensorflow.",
     },
   ],
   skills: [
