@@ -12,7 +12,7 @@ export const RESUME_DATA = {
   about:
     "Full Stack Engineer focused on building products with extra attention to detail",
   summary:
-    "Full time student at NYU, full stack engineer. I love building products that are simple, intuitive and delightful to use. I have experience working with startups and open source. I am currently looking for internship opportunities starting May 2024.",
+    "Full time student at NYU, full stack engineer. I love building products that are simple, intuitive and delightful to use. I have experience working with startups and open source. I am currently looking for full time opportunities starting May 2025.",
   avatarUrl: "https://avatars.githubusercontent.com/u/54208873?v=4",
   personalWebsiteUrl: "https://rohitprakash.dev",
   contact: {
@@ -31,7 +31,7 @@ export const RESUME_DATA = {
       },
       {
         name: "X",
-        url: "https://x.com/rohitp934",
+        url: "https://x.com/seatedro",
         icon: XIcon,
       },
     ],
@@ -52,13 +52,24 @@ export const RESUME_DATA = {
   ],
   work: [
     {
+      company: "NBCUniversal",
+      link: "https://www.nbcuniversal.com/",
+      badges: ["Remote"],
+      title: "Software Engineer Intern (SRE)",
+      logo: ParabolLogo,
+      start: "Jun 2024",
+      end: "Aug 2024",
+      description:
+        "Shipped Go services that collect Prometheus metrics providing overviews on internal AWS Database services. Designed Grafana dashboards to make stakeholder lives easier when viewing internal tooling metrics. Tech stack: Go, Terraform, Prometheus, Grafana, Kubernetes",
+    },
+    {
       company: "HiringTek Pvt. Ltd.",
       link: "https://hiringtek.com",
       badges: ["Remote"],
       title: "Software Engineer II (Full Stack)",
       logo: ParabolLogo,
-      start: "2021",
-      end: "2023",
+      start: "Aug 2021",
+      end: "Jun 2023",
       description:
         "Implemented new features, led squad, worked on improving the way developers ship the code, started migration from Emotion to Tailwind CSS and more. Technologies: React, TypeScript, GraphQL",
     },
@@ -68,8 +79,8 @@ export const RESUME_DATA = {
       badges: ["Remote"],
       title: "Software Engineering Intern (ML/AI -> Full Stack)",
       logo: ClevertechLogo,
-      start: "2020",
-      end: "2021",
+      start: "May 2020",
+      end: "Jun 2021",
       description:
         "Worked on building AI models to identify plagiarism during online interviews. Shipped OCR and Object detection models using Tesseract, Python, and Tensorflow.",
     },
@@ -86,6 +97,9 @@ export const RESUME_DATA = {
     "SQL",
     "Java",
     "WebRTC",
+    "Terraform",
+    "Kubernetes",
+    "Docker",
   ],
   projects: [
     {
