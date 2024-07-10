@@ -21,7 +21,7 @@ export const RESUME_DATA = {
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/rohitp934",
+        url: "https://github.com/seatedro",
         icon: GitHubIcon,
       },
       {
@@ -110,7 +110,7 @@ export const RESUME_DATA = {
       logo: ConsultlyLogo,
       link: {
         label: "encrypto",
-        href: "https://github.com/rohitp934/Encrypto",
+        href: "https://github.com/seatedro/Encrypto",
       },
     },
     {
@@ -119,7 +119,7 @@ export const RESUME_DATA = {
       description: "Rewrite of Lucia-Auth in Golang",
       link: {
         label: "github.com",
-        href: "https://github.com/rohitp934/guam",
+        href: "https://github.com/seatedro/guam",
       },
     },
     {
@@ -139,7 +139,7 @@ export const RESUME_DATA = {
       logo: JarockiMeLogo,
       link: {
         label: "github.com",
-        href: "https://github.com/rohitp934/v2",
+        href: "https://github.com/seatedro/v2",
       },
     },
     {
@@ -150,7 +150,7 @@ export const RESUME_DATA = {
       logo: Minimal,
       link: {
         label: "github.com",
-        href: "https://github.com/rohitp934/mirame",
+        href: "https://github.com/seatedro/mirame",
       },
     },
     {
@@ -161,7 +161,7 @@ export const RESUME_DATA = {
       logo: BarepapersLogo,
       link: {
         label: "github.com",
-        href: "https://github.com/rohitp934/coding.rs",
+        href: "https://github.com/seatedro/coding.rs",
       },
     },
     {
